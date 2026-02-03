@@ -69,7 +69,9 @@ Creates both an unexecuted Jupyter notebook and a version with pre-executed code
 sbatch grid_examples/jupyter_example/jupyter_example_instruction.slurm
 ```
 
-**Requirements:** Activate the virtual environment
+**Requirements:**
+- Selects a node where there is a Gurobi license installed
+- Virtual environment activation required
 
 ### 5. Gurobi Example (`gurobi_example`)
 Demonstrates Gurobi license assignment and running optimization code with Gurobi.
