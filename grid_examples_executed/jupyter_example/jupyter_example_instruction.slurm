@@ -1,0 +1,18 @@
+#!/bin/bash
+#Submit this script with: sbatch thefilename
+#SBATCH --time=01:00:00   # walltime
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
+#SBATCH --mem-per-cpu=1G
+#SBATCH -J "jupyter_example"
+#SBATCH --output=grid_examples/jupyter_example/slurm_out/%x_%A_%a.out
+#SBATCH --error=grid_examples/jupyter_example/slurm_err/%x_%A_%a.err
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+
+source ~/myproject_env/bin/activate
+cd grid_examples/jupyter_example
+
+jupyter nbconvert --to notebook --execute jupyter_example_main.ipynb --output jupyter_example_main_executed.ipynb

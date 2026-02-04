@@ -1,0 +1,26 @@
+Set parameter Username
+Set parameter LicenseID to value 2759806
+Academic license - for non-commercial use only - expires 2026-12-29
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2450 0 @ 2.10GHz, instruction set [SSE2|AVX]
+Thread count: 16 physical cores, 16 logical processors, using up to 16 threads
+
+Optimize a model with 3 rows, 2 columns and 6 nonzeros (Max)
+Model fingerprint: 0x6228bac5
+Model has 2 linear objective coefficients
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+00]
+  Objective range  [3e+00, 4e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+01]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 2 rows, 2 columns, 4 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.2000000e+01   9.996500e+00   0.000000e+00      0s
+       1    3.4000000e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 1 iterations and 0.04 seconds (0.00 work units)
+Optimal objective  3.400000000e+01
