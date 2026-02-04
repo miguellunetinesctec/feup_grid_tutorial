@@ -1,6 +1,6 @@
 # Grid Computing Examples
 
-This repository provides five complementary examples demonstrating how to use grid computing with SLURM. Each example illustrates different aspects and capabilities of the grid environment.
+This repository provides five complementary examples demonstrating how to use grid computing with SLURM. Each example illustrates different aspects and capabilities of the grid environment. `GRID guide.pdf` summarizes the most important commands needed to work effectively with the GRID.
 
 ## Repository Structure
 
@@ -69,9 +69,8 @@ Creates both an unexecuted Jupyter notebook and a version with pre-executed code
 sbatch grid_examples/jupyter_example/jupyter_example_instruction.slurm
 ```
 
-**Requirements:**
-- Selects a node where there is a Gurobi license installed
-- Virtual environment activation required
+**Requirements:** Activate the virtual environment
+
 
 ### 5. Gurobi Example (`gurobi_example`)
 Demonstrates Gurobi license assignment and running optimization code with Gurobi.
@@ -81,7 +80,9 @@ Demonstrates Gurobi license assignment and running optimization code with Gurobi
 sbatch grid_examples/gurobi_example/gurobi_example_instruction.slurm
 ```
 
-**Requirements:** Activate the virtual environment
+**Requirements:**
+- Selects a node where there is a Gurobi license installed
+- Virtual environment activation required
 
 ## Environment Setup
 
