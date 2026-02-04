@@ -1,5 +1,5 @@
 import numpy as np
-import gurobipy as GRB
+from gurobipy import *
 
 # Create a new model
 model = Model("simple_model")
